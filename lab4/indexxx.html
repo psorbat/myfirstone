@@ -1,8 +1,5 @@
 
-
-
-
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html>
 <head>
     <title></title>
@@ -10,24 +7,34 @@
 <body>
 
 <style>
-	#circle{ 
-		display: flex;
-		background-color: black
-		border-radius: 50%;
-		
+.icon{
+	background-color: #23272f;
+  color: white;
+  padding: 20px; 
+  cursor: pointer;
+  border-radius: 45%;
+	width: 20px;
+	height: 20px;
+	transition-duration: 0.4s;
 
-		
-	}
-.social{
-		display: flex;
-flex-direction: row;
-justify-content: space-around;
-align-items: center;
+}
 
+.icon:hover {
+	background-color: grey; 
+  color: white;
+}
 
+.flex-grid-thirds {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  
+}
 
-		
-	}
+.flex-grid-thirds .col {
+  width: 32%;
+}
+
 .image{
     display: flex;
 flex-direction: row;
@@ -35,6 +42,7 @@ justify-content: space-around;
 align-items: center;
 
 }
+
 .paragraph{
     display: flex;
 flex-direction: row;
@@ -45,8 +53,7 @@ color:#353535;
 }
 
 .text{
-    display: flex;
-flex-direction: row;
+    
     font-family: 'Overpass',sans-serif;
     white-space: normal;
 text-align: center;
@@ -64,10 +71,6 @@ font-weight: 50px;
     </style>
 
     <link rel="stylesheet" type="text/css" link href="https://fonts.googleapis.com/css?family=Abel|Overpass&display=swap"> 
-
-    
-
-
 <br/>
 <header><h3 class="paragraph" color: #353535>we are a team that adore what we do</h3></header>
 <hr/>
@@ -90,17 +93,22 @@ font-weight: 50px;
 </div>
 
 
-<div class="text">
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p>
-    <p>LLorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p>
+<div class="flex-grid-thirds text">
+    <p class="col">Lorem psum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.
+    	<img  src="mail.png">  <img  src="huh.png" > <img  src="twitter.png" >
+    </p>
+    <p class="col">LLorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p>
+    <p class="col">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p>
 </div>
-<div class="social circle">
-	 <img  src="mail.png" id="circle">  <img  src="huh.png" id="circle"> <img  src="twitter.png" id="circle"> 
-	 </div>
+<div class="flex-grid-thirds ">
+	 <p class="col "> <img  src="mail.png" class="icon">  <img  src="phone.png" class="icon"> <img  src="twitter.png" class="icon"> </p>
+	 <p class="col"><img  src="mail.png" class="icon" >  <img  src="phone.png" class="icon"> <img  src="twitter.png" class="icon"> </p>
+	 <p class="col "><img  src="mail.png" class="icon">  <img  src="phone.png" class="icon" > <img  src="twitter.png" class="icon"> </p> 
+	 <!-- две иконки были одинаковыми в архиве, поэтому я поменяла одну на телефонную трубку -->
+</div>
+
+
+
 	
-
-</div>
-
 </body>
 </html>
